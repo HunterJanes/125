@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".SynthesizerActivity">
+
+    <TextView
+        android:text="Hello World!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+        android:text="Hello World!" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mEButton"
+        android:id="@+id/lEButton"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:onClick="onButton1Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fButton"
+        android:id="@+id/lFButton"
+        android:onClick="onButton2Click"
+        android:layout_below="@+id/lEButton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LowF#"
+        android:id="@+id/fSButton"
+        android:layout_below="@+id/lFButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/lFButton"
+        android:singleLine="false"
+        android:onClick="onButton3Click"
+        android:clickable="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LowG"
+        android:id="@+id/gButton"
+        android:layout_below="@+id/fSButton"
+        android:layout_alignParentStart="true"
+        android:onClick="onButton4Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LowG#"
+        android:id="@+id/gSButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onButton5Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LowA"
+        android:id="@+id/aButton"
+        android:layout_below="@+id/gSButton"
+        android:layout_alignParentStart="true"
+        android:onClick="onButton6Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LowBb"
+        android:id="@+id/bBButton"
+        android:layout_below="@+id/aButton"
+        android:layout_alignParentStart="true"
+        android:onClick="onButton7Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LowB"
+        android:id="@+id/bButton"
+        android:onClick="onButton8Click"
+        android:layout_below="@+id/bBButton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MiddleC"
+        android:id="@+id/cButton"
+        android:layout_above="@+id/cSButton"
+        android:layout_alignParentEnd="true"
+        android:onClick="onButton9Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C#"
+        android:id="@+id/cSButton"
+        android:layout_above="@+id/fSButton"
+        android:layout_alignStart="@+id/cButton"
+        android:onClick="onButton10Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/dButton"
+        android:layout_below="@+id/cSButton"
+        android:layout_alignStart="@+id/cSButton"
+        android:onClick="onButton11Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D#"
+        android:id="@+id/dSButton"
+        android:layout_below="@+id/dButton"
+        android:layout_alignStart="@+id/dButton"
+        android:onClick="onButton12Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E"
+        android:id="@+id/hEbutton"
+        android:layout_above="@+id/aButton"
+        android:layout_alignStart="@+id/dSButton"
+        android:onClick="onButton13Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:id="@+id/hFButton"
+        android:onClick="onButton14Click"
+        android:layout_below="@+id/hEbutton"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F#"
+        android:id="@+id/hFSButton"
+        android:onClick="onButton15Click"
+        android:layout_below="@+id/aButton"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G"
+        android:id="@+id/hGButton"
+        android:onClick="onButton16Click"
+        android:layout_alignTop="@+id/bButton"
+        android:layout_alignStart="@+id/hEbutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Play A Tune!"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/cSButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Challenge One"
+        android:id="@+id/ButtonC1"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonC1Click" />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Synthesizer</string>
+    <string name="mEButton">LowE</string>
+    <string name="fButton">LowF</string>
+</resources>
